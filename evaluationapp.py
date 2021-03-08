@@ -84,7 +84,7 @@ def Calulate():
     checker = convert_measure(str(request.args.get('input_standard')), float(request.args.get('input1')), str(request.args.get('output_standard')))
     return check(checker, float(request.args.get('output_given')))
 if __name__ == '__main__':
-    app.run(debug=True, port=5009, host='192.169.1.117')
+    app.run(debug=True, port=5009, host='127.0.0.1')
 
 #checker = convert_measure(input_standard, input1, output_standard)
 #check(checker, output_given)
